@@ -7,9 +7,7 @@
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/mediaquerry.css">
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=key" />
-
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=person" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=lock" />
 
 </head>
 <body>
@@ -20,24 +18,22 @@
         <section id="login">
             <h1>Login</h1>
             <p>Seja bem vindo(a) novamente. Faça login parsa acessar sua conta e poder fazer as configurações no seu ambiente.</p>
-            <form action="cadastro.php" method="get">
+            <form id="formulario" action="cadastro.php" method="get">
                 <div id="email">
-                    <label for="iemail"><span class="material-symbols-outlined">person</span></label>
+                    <label for="iemail"><img src="imagens/person.png" alt=""></label>
 
-                    <input type="email" name="email" id="iemail" size="20">
+                    <input type="email" name="email" id="iemail" placeholder="seu e-mail">
 
                 </div>
                 <div id="senha">
-                    <label for="isenha"><span class="material-symbols-outlined">key</span></label>
+                    <label for="isenha"><img src="imagens/key.png" alt="Senha"></label>
 
-                    <input type="password" name="senha" id="isenha" size="20" minlength="8" max="25">
+                    <input type="password" name="senha" id="isenha"  minlength="8" max="25" placeholder="sua senha">
                 </div>
-                <div>
-                    <input type="submit" value="Entrar">
-                    <input type="button" value="Esqueci a senha">
+                <div id="botao">
+                    <input type="submit" value="Entrar" id="entrar">
+                    <input type="button" value="Esqueci a senha ✉️" id="esqueci">
                 </div>
-
-
                 
             </form>
 
