@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
 
 html, body{
@@ -11,16 +12,20 @@ html, body{
 
 body {
     position: relative;
-    background-color: rgb(50, 25, 109);
+    background-color: #01232E;
 }
 
 main {
-    position: relative;
+    position: absolute;
     width: 250px;
-    height: 520px;
+    height: 515px;
     background-color: aliceblue;
-    padding-bottom: 10px;
     border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.507);
+
+    transition: width .3s, height .3s;
+    transition-timing-function: ease;
 
     left: 50%;
     top: 50%;
@@ -29,96 +34,95 @@ main {
 }
 
 #imagem {
-    width: 250px;
+    display: block;
     height: 200px;
     background-image: url(../imagens/metal.jpg);
     background-position: center center;
+    background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 20px 20px 0px 0px;
+    
 }
 
 #login {
-    padding: 8px;
+    display: block;
+    padding: 10px;
     font-size: 0.8em;
-    font-weight: normal;
 }
 
 #login > h1 {
     text-align: center;
-    padding: 10px;
+    margin-bottom: 10px;
     font-size: 1.8em;
-    font-weight: bold;
 }
 
-#email, #senha {
-    background-color: rgb(50, 25, 109);
-    width: 220px;
-    color: white;
-    padding-top: 1px;
-    margin: 5px;
-    border: 2px solid rgb(50, 25, 109);
+.campo {
+    background-color: #01232E;
+    width: 100%;
+    height: 40px;
+    
+    margin: 5px 0px;
+    border: 2px solid #01232E;
     border-radius: 7px;
 }
 
 #iemail, #isenha {
-    background-color: #a3e7e5;
-    width: 180px;
-    height: 39px;
+    background-color: #fad7ba;
+    width: calc(100% - 40px);
+    height: 100%;
+    padding: 4px;
     text-indent: 5px;
     font-size: 1.2em;
     border: none;
     border-radius: 7px;
+    
+    transform: translateY(-7px);
+}
+
+.campo > span {
+    color: white;
+    font-size: 2em;
+    padding: 5px;
+}
+.campo > label {
+    display: none;
 }
 
 #iemail:focus, #isenha:focus {
     background-color: white;
+    outline: none;
 }
- label {
-    position: relative;
-    text-align: center;
-    padding: 20px;
-    
- }
-
- label > img {
-    position: absolute;
-    width: 30px;
-
-    left: 15%;
-    top: 25%;
- }
 
  #entrar {
     display: block;
-    background-color: #68c2bf;
+    background-color: #f59445 ;
     color: white;
     font-size: 1.2em;
-    width: 225px;
+    width: 100%;
     height: 40px;
-    margin: 5px;
     border: none;
     border-radius: 7px;
     cursor: pointer;
  }
 
  #entrar:hover {
-    background-color: #46817f;
+    background-color: #774318;
  }
  
  #esqueci {
     display: block;
     background-color: white;
-    color: #68c2bf;
+    color:  #f18832;
     font-size: 1.2em;
-    width: 225px;
+    width: 100%;
     height: 40px;
-    margin: 5px;
-    border: 1px solid #68c2bf;
+    margin-top: 5px;
+    border: 1px solid #f59445;
     border-radius: 7px;
     cursor: pointer;
  }
 
  #esqueci:hover {
-    background-color: #84fcf8;
+    background-color:#f8bb88;
+    color: white;
  }
 

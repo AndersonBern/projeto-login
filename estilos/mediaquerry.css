@@ -1,36 +1,52 @@
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+    body {
+        background-image: linear-gradient(to bottom, #e0a370, #01232E );
+    }
+
     main {
         width: 80vw;
-        height: 45vh;
+        height: 300px;
     }
     #imagem {
-        display: inline-block;
-        width: 25vw;
-        height: 47vh;
-        border-radius: 20px 0px 0px 20px;
+        float: left;
+        width: 30%;
+        height: 100%;
     }
 
     #login {
-        display: inline-block;
-        width: 53vw;
-        padding: 5px;
-        
-        left: 50%;
-        top: 50%;
-
-        transform: translate(0%, -10%);
+        float: right;
+        width: 70%;
+        height: 100%;
     }
 
-    #senha, #email {
-        width: 53vw;
-        margin: 0px;
+}
+
+@media screen and (min-width: 992px) {
+
+    body {
+        background-image: linear-gradient(to bottom, #e0a370, #01232E );
     }
 
-    #isenha, #iemail {
-        width: 47vw;
+    main {
+        width: 950px;
+        height: 320px;
+    }
+    #imagem {
+        float: right;
+        width: 50%;
+        height: 100%;
     }
 
-    #entrar, #esqueci {
-        width: 51vw;
+    #login {
+        float: left;
+        width: 50%;
+        height: 100%;
     }
+
+    #login > p {
+        font-size: 1em;
+        margin: 10px 0px;
+    }
+    
 }
