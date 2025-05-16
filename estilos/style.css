@@ -13,10 +13,13 @@ html, body{
 body {
     position: relative;
     background-color: #01232E;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 main {
-    position: absolute;
     width: 250px;
     height: 515px;
     background-color: aliceblue;
@@ -26,11 +29,6 @@ main {
 
     transition: width .3s, height .3s;
     transition-timing-function: ease;
-
-    left: 50%;
-    top: 50%;
-
-    transform: translate(-50%, -50%);
 }
 
 #imagem {
